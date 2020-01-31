@@ -1,0 +1,78 @@
+{
+  "CLIM": {
+    "ARMN_CLIM": 0.012,
+    "ARCV_CLIM": 0.2,
+    "ADMN_CLIM": 0.012,
+    "ALDF_CLIM": 0.009,
+    "LRMN_CLIM": 0.5,
+    "LRCV_CLIM": 0.2,
+    "LDMN_CLIM": 0.1,
+    "ETMX_CLIM": 0.005,
+    "EWLT_CLIM": 0.0001,
+    "TSEA_CLIM": 110
+  },
+  "CATC": {
+    "CAMN_CATC": "1 * 1000**2",
+    "CACV_CATC": 0.2,
+    "CTMU_CATC": "24 / 24 / 1000**0.76",
+    "CTUV_CATC": "0.75 * 60 * 60 * 24",
+    "CTWC_CATC": "(3 / 2) * CTUV_CATC",
+    "CTDC_CATC": "1000 * 60 * 60 * 24",
+    "BFPR_CATC": 0.5,
+    "APFC_CATC": 100,
+    "FLMN_CATC": "0.00001 * 60 * 60 * 24"
+  },
+  "SOIL": {
+    "KSAT_SOIL": 0.8,
+    "PORO_SOIL": 0.43,
+    "BETA_SOIL": 13.8,
+    "SHYG_SOIL": 0.14,
+    "SWLT_SOIL": 0.18,
+    "SSTR_SOIL": 0.46,
+    "SFLD_SOIL": 0.56
+  },
+  "CROP": {
+    "ZRCT_CROP": 0.5,
+    "ZRLC_CROP": 0.5,
+    "YMAX_CROP": 0.3,
+    "QPAR_CROP": 2,
+    "KPMN_CROP": 0.5,
+    "KPCV_CROP": 0.2,
+    "RPAR_CROP": 0.5,
+    "COST_CROP": 0.2,
+    "TGRW_CROP": 110
+  },
+  "CWPR": {
+    "NMMN_CWPR": 150,
+    "NMCV_CWPR": 0.2,
+    "BYVL_CWPR": "False",
+    "CAMO_CWPR": 10,
+    "PFMX_CWPR": 40,
+    "RDYS_CWPR": 1,
+    "MBLM_CWPR": 3,
+    "COST_CWPR": 0.03,
+    "STOR_CWPR": 50,
+    "FCCP_CWPR": 1.0,
+    "FLMN_CWPR": "24 * 60 * 60 * 0.0001"
+  },
+  "MEMB": {
+    "HAMN_MEMB": 5000,
+    "HACV_MEMB": 0.2,
+    "HPMN_MEMB": 1,
+    "HPCV_MEMB": 0.2,
+    "HSMN_MEMB": 5,
+    "HSCV_MEMB": 0.02,
+    "CMIN_MEMB": 200,
+    "SMNC_MEMB": "SSTR_SOIL",
+    "SMND_MEMB": "SFLD_SOIL",
+    "SMXC_MEMB": "SFLD_SOIL",
+    "SMXD_MEMB": "SFLD_SOIL"
+  },
+  "SIMU": {
+    "NMBR_SIMU": 8,
+    "NRUN_SIMU": 10000,
+    "BUFF_SIMU": "int(0.3 * TGRW_CROP)",
+    "INVL_SIMU": 24
+  },
+  "DBSE_FILE": "results/cwprresult.db"
+}
